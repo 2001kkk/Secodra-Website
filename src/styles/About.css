@@ -1,0 +1,81 @@
+.about {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-header h1 {
+  font-size: 3.8rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.about-header p {
+  color: #666;
+  font-size: 2.4rem;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.about-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-section .text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-section .text h2 {
+  font-size: 2.8rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.about-section .text p {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.about-section .image {
+  flex: 1;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.about-section .image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover Effect */
+.hover-effect:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.about-section ul {
+  padding-left: 1rem;
+  list-style: none;
+}
+
+.about-section ul li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: #333;
+}

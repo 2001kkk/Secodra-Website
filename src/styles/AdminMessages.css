@@ -1,0 +1,42 @@
+.admin-messages {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.admin-messages h1 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.message-card {
+  padding: 1rem 1.5rem;
+  background: white;
+  border-left: 4px solid #007bff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.message-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.message-card p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.timestamp {
+  font-size: 0.8rem;
+  color: gray;
+  margin-top: 0.5rem;
+}

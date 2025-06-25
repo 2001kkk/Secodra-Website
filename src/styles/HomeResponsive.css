@@ -1,0 +1,88 @@
+/* ✅ Scroll Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero,
+.about-company,
+.services-summary,
+.why-choose {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero {
+  animation-delay: 0.1s;
+}
+.about-company {
+  animation-delay: 0.3s;
+}
+.services-summary {
+  animation-delay: 0.5s;
+}
+.why-choose {
+  animation-delay: 0.7s;
+}
+
+/* ✅ Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .about-company {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services-summary ul {
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .why-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-item {
+    width: 90%;
+  }
+
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .about-text h2,
+  .services-summary h2,
+  .why-choose h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-text p,
+  .why-item p {
+    font-size: 0.9rem;
+  }
+
+  .why-item h3 {
+    font-size: 1.1rem;
+  }
+}
