@@ -41,7 +41,6 @@ const cardVariants = {
     transition: { duration: 0.8, ease: "easeOut" },
   },
 };
-
 const Portfolio = () => {
   return (
     <section className="portfolio-page">

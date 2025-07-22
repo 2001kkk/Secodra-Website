@@ -1,42 +1,70 @@
 import React from "react";
 import "../styles/Services.css";
-import webIcon from "../assets/web.png";
-import mobileIcon from "../assets/app-development.jpg";
-import vaptIcon from "../assets/vpat.jpg";
-import uiuxIcon from "../assets/UI-UX.jpeg";
+import webDevImage from "../assets/web.png";
+import mobileDevImage from "../assets/app-development.jpg";
+import vaptImage from "../assets/vpat.jpg";
+import uiuxImage from "../assets/UI-UX.jpeg";
+import marketingImage from "../assets/Digital-marketing.png"; 
+import itConsultingImage from "../assets/IT-Consulting.png";
 
 const Services = () => {
-  const services = [
+  const servicesList = [
     {
       title: "Web Development",
-      description: "We build responsive and high-performance websites using the latest technologies tailored to your business needs.",
-      icon: webIcon,
+      description:
+        "We craft responsive, scalable, and SEO-friendly websites using modern technologies tailored to your business needs.",
+      image: webDevImage,
+      link: "#web",
     },
     {
       title: "Mobile App Development",
-      description: "Cross-platform Android & iOS applications with elegant UI, fast performance, and strong backend support.",
-      icon: mobileIcon,
+      description:
+        "We build high-performance mobile apps for Android and iOS platforms with seamless user experience.",
+      image: mobileDevImage,
+      link: "#mobile",
     },
     {
-      title: "VAPT Security Services",
-      description: "Comprehensive Vulnerability Assessment and Penetration Testing to ensure your apps are safe and secure.",
-      icon: vaptIcon,
+      title: "VAPT Services",
+      description:
+        "Our Vulnerability Assessment & Penetration Testing services ensure your digital assets are secure from cyber threats.",
+      image: vaptImage,
+      link: "#vapt",
     },
     {
       title: "UI/UX Design",
-      description: "Crafting intuitive and engaging user interfaces to enhance user experience and business value.",
-      icon: uiuxIcon,
-    }
+      description:
+        "We create visually appealing and user-friendly interfaces for better engagement and brand identity.",
+      image: uiuxImage,
+      link: "#uiux",
+    },
+    {
+      title: "Digital Marketing",
+      description:
+        "Boost your online presence with our SEO, social media marketing, and performance-driven digital campaigns.",
+      image: marketingImage,
+      link: "#marketing",
+    },
+    {
+      title: "IT Consulting",
+      description:
+        "Our experts guide businesses to adopt the right technology, optimize processes, and improve IT infrastructure.",
+      image: itConsultingImage,
+    },
   ];
 
   return (
-    <section className="services-page">
-      <h1>Our Services</h1>
-      <p>At Secodra, we offer powerful digital solutions backed by expert development and robust security.</p>
-      <div className="service-grid">
-        {services.map((service, index) => (
+    <section className="services-section">
+      <div className="services-header">
+        <h1>Our Services</h1>
+        <p>
+          We offer a wide range of IT services to help your business grow and stay ahead in the digital era.
+        </p>
+      </div>
+
+      <div className="services-grid">
+        {servicesList.map((service, index) => (
           <div className="service-card" key={index}>
-            <img src={service.icon} alt={service.title} className="service-icon" />
+            <img src={service.image} alt={service.title} />
             <h2>{service.title}</h2>
             <p>{service.description}</p>
           </div>
